@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function(){
       var rootTime = document.querySelector("time");
       var rootMinus = document.querySelector("minus");
 
-      document.querySelector("anni").textContent = `Ngày gặp gần nhất ^.^
+      document.querySelector("anni").textContent = `Ngày gặp gần nhất
 ${(yourDate.getDate()>9)?yourDate.getDate():"0"+yourDate.getDate()}-${(yourDate.getMonth()>8)?(yourDate.getMonth()+1):"0"+(yourDate.getMonth()+1)}-${yourDate.getFullYear()}`;
       
       document.querySelector("date").textContent = Math.floor( Math.floor((new Date() - yourDate) / 1000) / 60 / 60 / 24)+" NGÀY";
